@@ -43,7 +43,7 @@
 
         <div class="product2"><img src="img/dairy milk.webp"class="iproduct1" alt="" title="Dairy Milk"><div class="text"><p>Cadbury Dairy Milk Silk Roast Almond Chocolate Bar 143g</p >
            <p class="prize">₹152</p></div>
-           <p class="stock">Stock:<span id="stock2">10</span</p>
+          <p class="stock">Stock:<span id="stock2">10</span></p>
            <div class="addbutton">
              <button class="add" id="addrost" onclick="addrost()"><i class="fa-solid fa-cart-shopping"></i>Add</button>
            </div>
@@ -90,7 +90,7 @@
 
         <div class="product2"><img src="img/pringles.webp"class="iproduct1" alt="" title="Pringles"><div class="text"><p>Pringles Original | Potato Chips | Classic Salted Potato</p >
            <p class="prize">₹170</p></div>
-           <p class="stock">Stock:<span id="stock6">10</span</p>
+           <p class="stock">Stock:<span id="stock6">10</span></p>
            <div class="addbutton">
              <button class="add" id="addpringles" onclick="addpringles()"><i class="fa-solid fa-cart-shopping"></i>Add</button>
            </div>
@@ -123,24 +123,95 @@
     <div class="products">
         <div class="product1"><img src="img/pepsi.jpg" class="iproduct1"  title="Pepsi">
         <div class="text"><p>Pepsi Bold Taste No Calorie, 320 ml </p ><p class="prize">₹150</p></div>
-        <p class="stock">Stock:<span id="stock9">10</span</p>
+        <p class="stock">Stock:<span id="stock9">10</span></p>
         <div class="addbutton"><button class="add" id="addpepsi" onclick="addpepsi()"><i class="fa-solid fa-cart-shopping"></i>Add</button></div>
         </div>
         <div class="product2"><img src="img/pulpy.webp"class="iproduct1"  title="Pulpy"><div class="text">
         <p>Minute Maid Pulpy Orange Juice drink | Orange Juice</p >
         <p class="prize">₹66</p></div>
-        <p class="stock">Stock:<span id="stock10">10</span</p>
+        <p class="stock">Stock:<span id="stock10">10</span></p>
         <div class="addbutton"><button class="add" id="addpulpy" onclick="addpulpy()"><i class="fa-solid fa-cart-shopping"></i>Add</button></div>
         </div>                                        
         <div class="product3"><img src="img/pomegranatejuce.jpg" class="iproduct1" title="PomegranateJuice"  alt="">
             <div class="text"><p>Real Pomegranate Fruit Nectar Juice -1L | Rich in Vitamin C </p ><p class="prize">₹111</p></div>
-            <p class="stock">Stock:<span id="stock11">10</span</p>
+            <p class="stock">Stock:<span id="stock11">10</span></p>
             <div class="addbutton"><button class="add" id="addpomegranate" onclick="addpomegranate()"><i class="fa-solid fa-cart-shopping"></i>Add</button></div></div> 
         <div class="product4"><img src="img/milkshake.webp" class="iproduct1" title="Milkshake" alt="">
             <div class="text"><p>Sunfeast Vanilla Milkshake, Creamy & Smooth Milkshake </p ><p class="prize">₹32</p></div>
-            <p class="stock">Stock:<span id="stock12">10</span</p>
+            <p class="stock">Stock:<span id="stock12">10</span></p>
             <div class="addbutton"><button class="add" id="addvanilla" onclick="addvanilla()"><i class="fa-solid fa-cart-shopping"></i>Add</button></div></div> 
     </div>
+
+    <div class="empty">
+       <button class="cartt" onclick="cartt(); buynow()"> <i class="fa-solid fa-cart-shopping"></i><span id="noitemss"></span>CHECKOUT</button>
+    </div>
+
+    <div class="cartbox" id="cartbox"><nav><span class="yourcart">Your Cart</span><button class="exit" onclick="exit()"><i class="fa-regular fa-circle-xmark"></i></button></nav>
+      <div class="horizondal"><ul id="selectedproducts" class="selectedproducts"></ul>
+        <h1 class="bill">Bill Summary</h1><p class="total" id="total"></p>
+        <div class="buynowbutton">
+          <button class="clear" onclick="clearr()">
+            <img src="img/clear-filter.png" class="clearing" alt="">
+            CLEAR
+          </button>
+          <button class="buynoww" onclick="payments();discount()">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="payments" id="payments"><span class="payment">Payments</span>
+     <button class="exit" onclick="exitpayments()"><i class="fa-regular fa-circle-xmark"></i></button>
+    <p class="totalamt" id="totalamt">Total Amount:₹</p>
+    <p class="Do">Do you have Discount code ?</p>
+     <div class="discount"><input type="text" class="inputdiscount" id="inputdiscount" placeholder="Enter Discount Code">
+      <button class="apply" onclick="discount()">Apply</button>
+      <p class="discounted" id="discounted"></p>
+      <p class="finalprice" id="finalprice"></p>
+
+      <div class="payoption">
+        <button class="cash" onclick="cash()">
+          <img src="img/dollar.png" alt="" class="cashicon"> CASH
+        </button>
+        <button class="gpay" onclick="gpay()">
+          <img src="img/pngwing.com.png" alt="" class="gpayicon"> GPAY
+        </button>
+      </div>
+    </div>
+
+    <div class="cashpage" id="cashpage">
+       <div class="thankyou" id="thankyou">
+        <p class="cashheading"><img src="img/correct.png.png" alt="" class="correct">All Products Dispensed!</p>
+        <p class="thank">Thanks for Shopping with us. Have a nice day!</p>
+        <div class="rating"><p class="rate  ">Rate Your Experience</p>
+          <div class="stars"><center>
+            <button id="star1" onclick="star1('star1')"><i class="fa-regular fa-star"></i></button>
+            <button id="star2" onclick="star1('star2')"><i class="fa-regular fa-star"></i></button>
+            <button id="star3" onclick="star1('star3')"><i class="fa-regular fa-star"></i></button>
+            <button id="star4" onclick="star1('star4')"><i class="fa-regular fa-star"></i></button>
+            <button id="star5" onclick="star1('star5')"><i class="fa-regular fa-star"></i></button>
+          </center>
+          </div> 
+        </div>
+
+        <center>
+          <button class="closecash" id="cloasecash" onclick="paymentcash()">Close</button>
+        </center>
+       </div>
+
+       <p class="load" id="load">Loading</p>
+       <span class="loading" id="loading"></span>
+    </div>
+
+    <div class="gpaypage" id="gpaypage">
+       <h1 class="scan"> Scan the Qr code</h1>
+       <center>
+        <img src="img/gpayqrcode.png" alt="" title="qrcode" class="qrcode">
+       </center>
+       <button class="closegay" id="closegpayqrcode" onclick="paymentscash()">Pay with in (5)</button>
+    </div>
+    <div class="summa"></div>
+    </div>
+
 
  </body>
 </html>
