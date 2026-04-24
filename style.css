@@ -218,7 +218,7 @@ header{
     width: 99%;
     margin-top: 10px;
     height: 55vh;
-    /* visibility: hidden; */
+    visibility: hidden;
     background-color: rgb(237, 234, 234);
     color: #333;
 }
@@ -297,7 +297,7 @@ li{
     background-color: #f2f2f2;
     width: 50%;
     height: 60vh;
-    /* visibility: hidden; */
+    visibility: hidden;
     border-radius: 15px;
     border: rgb(0, 0, 0) 1px solid;
     position: fixed;
@@ -418,17 +418,17 @@ li{
     text-align: center;
     font-size: 30px;
     margin-top: 20%;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 .load2{
     text-align: center;
     font-size: 30px;
     margin-top: 20%;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 .thankyou{
     position: absolute;
-    /* visibility: hidden; */
+    visibility: hidden;
     border: 2px rgb(255, 255, 0) solid;
     width: 80%;
     height: 50vh;
@@ -502,7 +502,7 @@ li{
     height: 40vh;
 }
 .cartfixed{
-    /* visibility: hidden; */
+    visibility: hidden;
     position: fixed;
     color: #4CAF50;
     margin-left: 96%;
@@ -543,7 +543,7 @@ li{
     background-color: #f2f2f2;
     width: 50%;
     height: 60vh;
-    /* visibility: hidden; */
+    visibility: hidden;
     border-radius: 15px;
     border: 1px solid rgb(162, 179, 143);
     position: fixed;
@@ -577,7 +577,7 @@ li{
     background-color: #f2f2f2;
     width: 50%;
     height: 60vh;
-    /* visibility: hidden; */
+    visibility: hidden;
     border-radius: 15px;
     position: fixed;
     border: rgb(162, 179, 143) 1px solid;
