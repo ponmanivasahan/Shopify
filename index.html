@@ -20,7 +20,7 @@
  <body>
     <header>
         <div class="cartfixed" id="cartfixed">
-            <a href="#cartbox"><button class="buttoncart"><span id="noitems"></span><i class="fa-solid fa-cart-shopping"></i> </button></a>
+          <a href="#cartbox"><button class="buttoncart"><span id="noitemsfixed"></span><i class="fa-solid fa-cart-shopping"></i> </button></a>
         </div>
          <h1 class="heading">The Vending Spot</h1>
          <a href="#cartbox">
@@ -176,6 +176,7 @@
         </button>
       </div>
     </div>
+    </div>
 
     <div class="cashpage" id="cashpage">
        <div class="thankyou" id="thankyou">
@@ -193,7 +194,7 @@
         </div>
 
         <center>
-          <button class="closecash" id="cloasecash" onclick="paymentcash()">Close</button>
+          <button class="closecash" id="closecash" onclick="paymentscash()">Close</button>
         </center>
        </div>
 
@@ -206,10 +207,10 @@
        <center>
         <img src="img/gpayqrcode.png" alt="" title="qrcode" class="qrcode">
        </center>
-       <button class="closegay" id="closegpayqrcode" onclick="paymentscash()">Pay with in (5)</button>
+         <button class="closegay" id="closegpayqrcode" onclick="closegpay()">Pay with in (5)</button>
     </div>
-    <div class="summa"></div>
-    </div>
+
+       <div class="summa"></div>
 
 
  </body>
