@@ -1,4 +1,4 @@
-## THE VENDORA <img src="img/vending-machine.png" alt="">
+## THE VENDORA
 
 During a stretch of exam season, in the middle of the revision breaks and late-night study sessions, I found myself wanting to build this to complete my lockin sidequest challenge, which is something simple, fun, and complete from end to end. I used to go to vending machine to refresh to buy snacks, That's how The Vendora idea came to my mind.
 
