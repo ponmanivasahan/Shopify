@@ -495,7 +495,7 @@ function addselectedproducts(){
         if(!selectedproduct){
            product1.innerHTML=`
             <div class="selectedproduct" id="selectedproduct">
-            <img src="img/temptaion.png"   title="Cadbury Temptations">
+            <img src="img/temptation.png"   title="Cadbury Temptations">
             <div class="cartinside"><p class="qunatity">Quantity:${cadbury}<br>Price:₹${price1}</p></div> </div> `
             selectedproducts.append(product1) 
         }
