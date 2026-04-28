@@ -849,13 +849,16 @@ function clearGpayTimers(){
 function resetCashLoaderState(){
   var load=document.getElementById('load');
   var loading=document.getElementById('loading');
-  var thankyou=document.getElementById('thankyou');
+  var thankyouEl=document.getElementById('thankyou');
+  var cashloader=document.getElementById('cashloader');
   var closecash=document.getElementById('closecash');
   a=34;
+  cashloader.style.display='flex';
   load.style.visibility='inherit';
   load.textContent='Loading';
   loading.style.visibility='inherit';
-  thankyou.style.visibility='hidden';
+  thankyouEl.style.visibility='hidden';
+  thankyouEl.style.display='none';
   closecash.textContent='Close(34)';
 }
 
@@ -894,8 +897,11 @@ function thankyou(){
   load.style.visibility='hidden'
   var loading=document.getElementById('loading')
   loading.style.visibility='hidden'
-  var thankyou=document.getElementById('thankyou')
-  thankyou.style.visibility='inherit'
+  var cashloader=document.getElementById('cashloader')
+  var thankyouEl=document.getElementById('thankyou')
+  cashloader.style.display='none'
+  thankyouEl.style.display='flex'
+  thankyouEl.style.visibility='inherit'
 }
 
 function star1(star){
